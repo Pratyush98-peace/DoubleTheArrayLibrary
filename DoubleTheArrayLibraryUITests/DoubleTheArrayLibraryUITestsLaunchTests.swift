@@ -2,7 +2,7 @@
 //  DoubleTheArrayLibraryUITestsLaunchTests.swift
 //  DoubleTheArrayLibraryUITests
 //
-//  Created by Lokesh Bhansali on 31/03/23.
+//  Created by Pratyush Jha on 31/03/23.
 //
 
 import XCTest
