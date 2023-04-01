@@ -16,6 +16,7 @@
 		FE20F24529D723DF008F0369 /* DoubleTheArrayLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE20F24429D723DF008F0369 /* DoubleTheArrayLibraryTests.swift */; };
 		FE20F24F29D723DF008F0369 /* DoubleTheArrayLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE20F24E29D723DF008F0369 /* DoubleTheArrayLibraryUITests.swift */; };
 		FE20F25129D723DF008F0369 /* DoubleTheArrayLibraryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE20F25029D723DF008F0369 /* DoubleTheArrayLibraryUITestsLaunchTests.swift */; };
+		FE20F26029D7247F008F0369 /* DoubleTheArray.c in Sources */ = {isa = PBXBuildFile; fileRef = FE20F25F29D7247F008F0369 /* DoubleTheArray.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		FE20F24A29D723DF008F0369 /* DoubleTheArrayLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubleTheArrayLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE20F24E29D723DF008F0369 /* DoubleTheArrayLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTheArrayLibraryUITests.swift; sourceTree = "<group>"; };
 		FE20F25029D723DF008F0369 /* DoubleTheArrayLibraryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTheArrayLibraryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FE20F25D29D7247E008F0369 /* DoubleTheArrayLibrary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoubleTheArrayLibrary-Bridging-Header.h"; sourceTree = "<group>"; };
+		FE20F25E29D7247F008F0369 /* DoubleTheArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleTheArray.h; sourceTree = "<group>"; };
+		FE20F25F29D7247F008F0369 /* DoubleTheArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoubleTheArray.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,13 @@
 				FE20F22D29D723DD008F0369 /* AppDelegate.swift */,
 				FE20F22F29D723DD008F0369 /* SceneDelegate.swift */,
 				FE20F23129D723DD008F0369 /* ViewController.swift */,
+				FE20F25E29D7247F008F0369 /* DoubleTheArray.h */,
+				FE20F25F29D7247F008F0369 /* DoubleTheArray.c */,
 				FE20F23329D723DD008F0369 /* Main.storyboard */,
 				FE20F23629D723DE008F0369 /* Assets.xcassets */,
 				FE20F23829D723DE008F0369 /* LaunchScreen.storyboard */,
 				FE20F23B29D723DE008F0369 /* Info.plist */,
+				FE20F25D29D7247E008F0369 /* DoubleTheArrayLibrary-Bridging-Header.h */,
 			);
 			path = DoubleTheArrayLibrary;
 			sourceTree = "<group>";
@@ -195,6 +202,7 @@
 				TargetAttributes = {
 					FE20F22929D723DC008F0369 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					FE20F23F29D723DF008F0369 = {
 						CreatedOnToolsVersion = 14.2;
@@ -258,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE20F26029D7247F008F0369 /* DoubleTheArray.c in Sources */,
 				FE20F23229D723DD008F0369 /* ViewController.swift in Sources */,
 				FE20F22E29D723DD008F0369 /* AppDelegate.swift in Sources */,
 				FE20F23029D723DD008F0369 /* SceneDelegate.swift in Sources */,
@@ -435,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -452,6 +462,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nimbleEdge.DoubleTheArrayLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DoubleTheArrayLibrary/DoubleTheArrayLibrary-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -479,6 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nimbleEdge.DoubleTheArrayLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DoubleTheArrayLibrary/DoubleTheArrayLibrary-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
